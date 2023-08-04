@@ -16,9 +16,9 @@ i = 0
       new_array << array[i]
       i += array[i] 
   end
-    return new_array
+  return new_array
 end
 
-  p skip([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+p skip([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
   
     
