@@ -6,17 +6,17 @@
 function alternate(string) {
   let i = 0;
   let i2 = 1;
-  let upper = ""
+  let upper = "";
 
-  while(i < string.length ) { 
+  while (i < string.length) {
     upper += string[i];
-    if ( i2 < string.length) {
-      upper += string[i2].toUpperCase()
-    })
-    i += 2
-    i2 += 2
+    if (i2 < string.length) {
+      upper += string[i2].toUpperCase();
+    }
+    i += 2;
+    i2 += 2;
   }
-  return upper
+  return upper;
 }
 
-console.log(alternate("hello, how are your porcupines today?"))
+console.log(alternate("hello, how are your porcupines today?"));
