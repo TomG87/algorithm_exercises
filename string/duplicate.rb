@@ -4,6 +4,7 @@
 # Input: “abcdefghhijkkloooop”
 # Output: “h”
 
+
 def duplicate(string)
   i = 0
   i2 = 1
