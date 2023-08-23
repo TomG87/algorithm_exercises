@@ -5,3 +5,11 @@
 
 # Input: “baloney”
 # Output: false
+
+def palindrome(string):
+    if string == string[::-1]:
+        return True 
+    else:
+        return False
+    
+print(palindrome("racecar"))
