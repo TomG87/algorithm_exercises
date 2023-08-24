@@ -7,3 +7,18 @@
 
 // # Input: "ABCDEFG", "ABCDEFG",
 // # Output: 0
+
+function hamming(string, string2) {
+  let i = 0;
+  let count = 0;
+
+  while (i < string.length) {
+    if (string[i] !== string2[i]) {
+      count += 1;
+    }
+    i += 1;
+  }
+  return count;
+}
+
+console.log(hamming("ABCDEFG", "ABCXEOG"));
