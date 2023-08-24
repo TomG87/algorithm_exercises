@@ -7,3 +7,16 @@
 
 # Input: "ABCDEFG", "ABCDEFG",
 # Output: 0
+
+def hamming(string, string2):
+    i = 0
+    count = 0
+
+    while i < len(string):
+        if string[i] != string2[i]:
+            count += 1
+        i += 1
+
+    return count
+
+print(hamming("ABCDEFG", "EBCXEOG"))
