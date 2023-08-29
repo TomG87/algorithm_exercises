@@ -13,9 +13,11 @@ function fizzbuzz(number) {
     } else {
       if (number % 3 === 0) {
         return "FIZZ";
+      } else {
+        return `${number} is not divisible`;
       }
     }
   }
 }
 
-console.log(fizzbuzz(3));
+console.log(fizzbuzz(11));
