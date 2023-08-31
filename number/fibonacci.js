@@ -8,13 +8,11 @@
 function fibonacci(number) {
   let i = 0;
   let i2 = 1;
-  let i3 = 2;
 
   while (i < number) {
     total = i + i2;
     i = i2;
     i2 = total;
-    i3 += 1;
   }
 
   return i2;

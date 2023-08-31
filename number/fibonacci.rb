@@ -8,13 +8,12 @@
 def fibonacci(number)
   i = 0
   i2 = 1
-  i3 = 2
+
   
   while i < number
     total = i + i2
     i = i2
     i2 = total
-    i3 += 1
   end
   
   return i2
