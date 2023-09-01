@@ -9,3 +9,12 @@
 
 // If your language provides a method in the standard library that does this look-up, pretend it doesn't exist and implement it yourself.
 
+function leap(number) {
+  if (number % 4 === 0 || (number % 100 !== 0 && number % 400 === 0)) {
+    return `${number} is a leap year`;
+  } else {
+    return `${number} is not a leap year`;
+  }
+}
+
+console.log(leap(1898));
