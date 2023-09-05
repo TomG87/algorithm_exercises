@@ -22,3 +22,18 @@
 
 # Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
+def collatz(number):
+  steps = 0
+
+  while number != 1:
+    if number % 2 == 0:
+      number = (number / 2)
+      steps += 1
+    else:
+      number = ((number * 3) + 1)
+      steps += 1
+  
+  return steps
+
+print(collatz(12))
+  
