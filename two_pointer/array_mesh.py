@@ -5,6 +5,14 @@
 
 def mesh(array, array2):
 
-  new = []:
+  newArray = []
 
-  
+  for one in array:
+    for two in array2:
+      newArray.append(one + two)
+
+  return newArray
+
+print(mesh(["a", "b", "c"], ["d", "e", "f", "g"]))
+
+
