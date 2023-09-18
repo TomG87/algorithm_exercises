@@ -1,4 +1,3 @@
-
 # Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
 
 # A "100 Coolio Array" meets the following criteria:
