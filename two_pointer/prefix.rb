@@ -14,3 +14,23 @@
 # Note:
 
 # All given inputs are in lowercase letters a-z.
+
+def prefix(array)
+  i = 0
+  count = 0
+
+  while i < array.length
+    if array[0][i] == array[1][i] && array[0][i] == array[2][i] && array[1][i] == array[2][i]
+      count += 1
+    end
+    i += 1
+  end
+
+  if count > 1
+    return count
+  else
+    return ""
+  end
+end
+
+p prefix(["flower","flow","flight"])
