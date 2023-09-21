@@ -6,9 +6,18 @@
 
 # Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
-function count(string) {
-  let i = 0
+def count(string):
+  i = 0
   most = {}
 
-  while (i < string.length)
-}
+  while i < len(string):
+    if most.get(string[i]):
+      most[string[i]] += 1
+    else:
+      most[string[i]] = 1
+    i += 1
+  
+  return most
+
+print(count(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+
