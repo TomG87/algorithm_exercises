@@ -8,28 +8,31 @@
 
 function count(string) {
   let i = 0;
-  most = {};
+  let most = {};
 
   while (i < string.length) {
-    if ((most[string[i]] = true)) {
+    if (most[string[i]]) {
       most[string[i]] += 1;
     } else {
       most[string[i]] = 1;
     }
     i += 1;
   }
+  return most;
 }
 
-console.log([
-  "Dewey",
-  "Truman",
-  "Dewey",
-  "Dewey",
-  "Truman",
-  "Truman",
-  "Dewey",
-  "Truman",
-  "Truman",
-  "Dewey",
-  "Dewey",
-]);
+console.log(
+  count([
+    "Dewey",
+    "Truman",
+    "Dewey",
+    "Dewey",
+    "Truman",
+    "Truman",
+    "Dewey",
+    "Truman",
+    "Truman",
+    "Dewey",
+    "Dewey",
+  ])
+);
