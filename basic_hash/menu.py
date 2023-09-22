@@ -5,3 +5,22 @@
 # Output: 14
 
 # Explanation: If someone would order one of everything on the menu, they'd pay a total of 14 (the sum of all the hash's values).
+
+def menu(menu_items):
+    total = 0
+
+    for price in menu_items.values():
+        total += price
+
+    return total
+
+menu_items = {
+    "hot dog": 2,
+    "hamburger": 3,
+    "steak sandwich": 5,
+    "fries": 1,
+    "cole slaw": 1,
+    "soda": 2
+}
+
+print(menu(menu_items))
