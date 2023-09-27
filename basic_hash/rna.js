@@ -13,3 +13,27 @@
 
 // Input: 'ACGTGGTCTTAA'
 // Output: 'UGCACCAGAAUU'
+
+function rna(string) {
+  let i = 0;
+  let result = "";
+
+  while (i < string.length) {
+    if (string[i] === "G") {
+      result += "C";
+      i += 1;
+    } else if (string[i] === "C") {
+      result += "G";
+      i += 1;
+    } else if (string[i] === "T") {
+      result += "A";
+      i += 1;
+    } else if (string[i] === "A") {
+      result += "U";
+      i += 1;
+    }
+  }
+  return result;
+}
+
+console.log(rna("ACGTGGTCTTAA"));
