@@ -13,3 +13,24 @@
 
 # Input: 'ACGTGGTCTTAA'
 # Output: 'UGCACCAGAAUU'
+
+def rna(string):
+  i = 0
+  result = ""
+  while i < len(string):
+    if string[i] == "G":
+      result += "C"
+      i += 1
+    elif string[i] == "C":
+      result += "G"
+      i += 1
+    elif string[i] == "T":
+      result += "A"
+      i += 1
+    elif string[i] == "A":
+      result += "U"
+      i += 1
+  
+  return result
+
+print(rna('ACGTGGTCTTAA'))
