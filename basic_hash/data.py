@@ -22,3 +22,4 @@
 # {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
 # ]
 
+def data(array, array2):
