@@ -3,10 +3,10 @@
 // For example, given this array of posts (note that the submitted_by is an id number):
 
 // [
-// {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
-// {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
-// {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
-// {title: 'Mondays are the worst', submitted_by: 403, likes: 644}
+// {"title": 'Me Eating Pizza', submitted_by: 231, likes: 1549},
+// {"title": 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
+// {"title": 'best selfie evar!!!', submitted_by: 111, likes: 1092},
+// {"title": 'Mondays are the worst', submitted_by: 403, likes: 644}
 // ]
 
 // And this hash of users (the key is the id number and the value is the user's real name):
@@ -16,10 +16,10 @@
 // Return the array of posts as follows:
 
 // [
-// {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
-// {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
-// {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
-// {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+// {"title": 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+// {"title": 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+// {"title": 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+// {"title": 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
 // ]
 
 function data(array, array2) {
