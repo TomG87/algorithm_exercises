@@ -8,3 +8,17 @@
 # Input: “frog”, “bear”
 # Output: false
 
+def anagram(string, string2):
+  i = 0
+
+  if len(string)  == len(string2):
+    if string[i] in string2:
+      i += 1
+    else:
+      return False
+    return True
+  else:
+    return False
+
+print(anagram("iceman", "cinema"))
+    

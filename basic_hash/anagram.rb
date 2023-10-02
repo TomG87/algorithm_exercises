@@ -22,6 +22,8 @@ def anagram(string, string2)
         end
       end   
     end
+  else
+    return false
   end
   return true
 end
